@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'courier new';
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.fundo {
+    background-image: url(imagens/5232.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100wh;
+    padding: 50px 0;
+}
+
+.titulo {
+    background-color: crimson;
+    width: 90%;
+    max-width: 750px;
+    height: 80px;
+    margin: 0px auto;
+    border-radius: 250px 0px 0 0;
+
+}
+
+.titulo h1 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    font-weight: none;
+
+}
+
+.container {
+    width: 90%;
+    max-width: 750px;
+    background-color: rgba(0, 0, 0, 0.95);
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 15px 10px 15px ;
+    border-radius: 0px 0px 0 0;
+}
+
+.barraDePesquisa {
+    margin: 10px 0 5px 0;
+    padding: 5px;
+    width: 250px;
+}
+
+.btnAdicionarProduto {
+    margin: 5px;
+    padding: 7px;
+    width: 200px;
+    background-color: crimson;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 750px;
+    min-height: 350px;
+    background-color: rgba(0, 0, 0, 0.95);
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container2 h2 {
+    border-top: 1px solid crimson;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.listaDeProdutos {
+
+    border-right: 1px solid crimson;
+    min-width: 375px;
+    padding: 0 10px 20px 10px;
+    flex: 1 0 auto;
+}
+
+.listaDeProdutos ul {
+    position: relative;
+    left: 25%;
+    text-align: justify;
+    margin: 20px auto;
+    padding-left: 35px;
+    font-size: 20px;
+}
+
+.checkbox {
+    height: 14px;
+    width: 14px;
+}
+
+.btnDeletar {
+    background-color: crimson;
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    border: none;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.valorTotal {
+    border-left: 1px solid crimson;
+    min-width: 375px;
+    min-height: 300px;
+    padding: 0 10px 20px 10px;
+    flex: 1 0 auto;
+}
+
+.valorTotal h3 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.valorTotal img {
+    display: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-top: 20px;
+    max-height: 350px;
+}
+
+
+/*----------------------------------Pop Up---------------------------------------------------*/
+
+.popupAlerta {
+    display: none;
+}
+
+.popupPreco {
+    display: none;
+}
+
+.fundoEscuro {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.popup {
+    background-color: rgb(57, 57, 57);
+    border: 3px solid crimson;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 100px;
+}
+
+.popupPrecoConteudo {
+    position: relative;
+    top: 50%;
+    transform: translatey(-50%);
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.barraDePreco {
+    margin: 10px 0 5px 0;
+    padding: 5px;
+    width: 170px;
+}
+
+.btnInserirPreco {
+    margin: 5px;
+    padding: 7px;
+    width: 150px;
+    background-color: crimson;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.popupBtnFechar {
+    background-color: crimson;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    color: white;
+    font-size: 11px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.popupAlertaConteudo {
+    position: relative;
+    top: 50%;
+    transform: translatey(-50%);
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+}

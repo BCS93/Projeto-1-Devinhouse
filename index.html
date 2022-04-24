@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Meu primeiro projeto avaliativo do curso DEVinhouse. A página é uma aplicação de lista de compra que   aplica os conhecimentos obtidos em aula nas linguagens Html, Css e JavaScript.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="imagens/favicon-16x16.png" type="image/x-icon">
+    <link rel="apple-touch icon" href="imagens/apple-touch-icon.png" type="image/x-icon">
+    <title>Meu App - Lista de Compras</title>
+</head>
+
+<body class="fundo">
+
+    <header class="titulo">
+        <h1>Minha Lista de Compras</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form>
+                <label for="barraDePesquisa">Digite um produto para adicioná-lo na lista</label><br>
+                <input class="barraDePesquisa" type="text" placeholder="carne, tomate, suco..." required>
+                <button class="btnAdicionarProduto">Adicionar Produto</button>
+            </form>
+        </div>
+
+        <div class="container2">
+            <div class="listaDeProdutos">
+                <h2>Meus Produtos</h2>
+                <form>
+                    <ul class="lista"></ul>
+                </form>
+            </div>
+            <div class="valorTotal">
+                <h2>Valor Total</h2>
+                <h3>R$0.00</h3>
+                <img src="" class="imgGif">
+            </div>
+        </div>
+    </main>
+    <div class="fundoEscuro popupPreco">
+        <div class="popup">
+
+            <div class="popupPrecoConteudo">
+                <form>
+                    <label for="barraDePreco">Digite o valor do produto.</label><br>
+                    <input class="barraDePreco" type="number" placeholder="R$12,34..." required>
+                    <input type="hidden" id="produtoEmQuestao">
+                    <button class="btnInserirPreco">Inserir Preço</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="fundoEscuro popupAlerta">
+        <div class="popup">
+
+            <div class="popupBtnFechar">x</div>
+
+            <div class="popupAlertaConteudo">
+                <p>Por favor, digite um nome/valor válido</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
